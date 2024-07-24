@@ -56,7 +56,7 @@ async def main():
     args = sys.argv
 
     def help() -> str:
-        return "python main.py <audio_file> <audio_output_dir> <transcibe_result_file>\ne.g. python main.py audio.m4a output result.txt"
+        return "python main.py <audio_file> <output_file>\ne.g. python main.py audio.m4a result.txt"
 
     if len(args) < 3:
         print(help())
@@ -68,13 +68,9 @@ async def main():
         print(help())
         exit(1)
 
-    audio_output_dir = args[2]
-    if audio_output_dir == "":
-        print("Please provide an output directory")
-        print(help())
-        return
+    audio_output_dir = "audio_chunks"
 
-    transcribe_result_file = args[3]
+    transcribe_result_file = args[2]
     if transcribe_result_file == "":
         print("Please provide a result file")
         print(help())
