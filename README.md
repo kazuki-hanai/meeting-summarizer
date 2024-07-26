@@ -28,3 +28,9 @@ poetry run python main.py <audio_file>
 ```
 
 Then, chunks are outputed to `<audio>_chunks` folder and transcriptions are outputed to `<audio>_transcriptions.txt`
+
+## How to record the meeting
+
+I use [Blackhole](https://existential.audio/blackhole/) to create a virtual audio device that can be used as an input for recording.
+
+Ref: [BlackHoleでMac上で再生される音声を録音する](https://dev.classmethod.jp/articles/record-sounds-on-mac-with-blackhohle/)
