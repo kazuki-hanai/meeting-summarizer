@@ -31,6 +31,6 @@ Then, chunks are outputed to `<audio>_chunks` folder and transcriptions are outp
 
 ## How to record the meeting
 
-I use [Blackhole](https://existential.audio/blackhole/) to create a virtual audio device that can be used as an input for recording.
+I use [Blackhole](https://existential.audio/blackhole/) to create a virtual audio device that can be used as an input for recording. And I use QuickTime Player to record the audio.
 
 Ref: [BlackHoleでMac上で再生される音声を録音する](https://dev.classmethod.jp/articles/record-sounds-on-mac-with-blackhohle/)
