@@ -22,6 +22,7 @@ end
 
 To run the script, execute the following command:
 ```
+export OPENAI_API_KEY=<your_openai_api_key>
 poetry install
 poetry run python main.py <audio_file>
 # e.g. poetry run python main.py audio.mp3
@@ -31,6 +32,6 @@ Then, chunks are outputed to `<audio>_chunks` folder and transcriptions are outp
 
 ## How to record the meeting
 
-I use [Blackhole](https://existential.audio/blackhole/) to create a virtual audio device that can be used as an input for recording. And I use QuickTime Player to record the audio.
+I use [Blackhole](https://existential.audio/blackhole/) to create a virtual audio device that can be used as an output for recording. And I use QuickTime Player to record the audio.
 
 Ref: [BlackHoleでMac上で再生される音声を録音する](https://dev.classmethod.jp/articles/record-sounds-on-mac-with-blackhohle/)
