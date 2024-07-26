@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "audio-to-text"
+name = "meeting-summarizer"
 version = "0.1.0"
 description = ""
 authors = ["Kazuki Hanai <hnkz.64@gmail.com>"]

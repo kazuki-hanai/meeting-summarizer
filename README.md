@@ -1,8 +1,8 @@
-# audio-to-text
+# meeting-summarizer
 
 ## Pre-requisites
 - poetry
-- Whisper API key
+- OpenAI API key
 - ffmpeg
 
 ## Usage
