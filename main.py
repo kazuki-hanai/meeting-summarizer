@@ -7,7 +7,7 @@ import sys
 import subprocess
 from pathlib import Path
 
-def spliit_audio(input_file: str, output_dir: str = "output", segment_duration: int = 50) -> None | Exception:
+def spliit_audio(input_file: str, output_dir: str, segment_duration: int = 50) -> None | Exception:
     try:
         os.makedirs(output_dir, exist_ok=True)
     except OSError as e:
@@ -56,9 +56,9 @@ async def main():
     args = sys.argv
 
     def help() -> str:
-        return "python main.py <audio_file> <output_file>\ne.g. python main.py audio.m4a result.txt"
+        return "python main.py <audio_file>\ne.g. python main.py audio.m4a result.txt"
 
-    if len(args) < 3:
+    if len(args) < 2:
         print(help())
         return
 
@@ -68,9 +68,9 @@ async def main():
         print(help())
         exit(1)
 
-    audio_output_dir = "audio_chunks"
+    audio_output_dir = audio_file.split(".")[0] + "_chunks"
 
-    transcribe_result_file = args[2]
+    transcribe_result_file = audio_file.split(".")[0] + "_transcriptions.txt"
     if transcribe_result_file == "":
         print("Please provide a result file")
         print(help())

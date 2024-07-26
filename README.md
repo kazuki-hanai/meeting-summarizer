@@ -23,6 +23,8 @@ end
 To run the script, execute the following command:
 ```
 poetry install
-poetry run python main.py <audio_file> <output_file>
-# e.g. poetry run python main.py audio.mp3 output.txt
+poetry run python main.py <audio_file>
+# e.g. poetry run python main.py audio.mp3
 ```
+
+Then, chunks are outputed to <audio>_chunks and transcriptions are outputed to <audio>_transcriptions.txt
