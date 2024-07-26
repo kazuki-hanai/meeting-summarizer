@@ -27,4 +27,4 @@ poetry run python main.py <audio_file>
 # e.g. poetry run python main.py audio.mp3
 ```
 
-Then, chunks are outputed to <audio>_chunks and transcriptions are outputed to <audio>_transcriptions.txt
+Then, chunks are outputed to `<audio>_chunks` folder and transcriptions are outputed to `<audio>_transcriptions.txt`
