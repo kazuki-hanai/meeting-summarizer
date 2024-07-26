@@ -97,13 +97,12 @@ async def main():
         tasks.append(task)
 
     results: list[dict[str, str]] = await asyncio.gather(*tasks)
-    
+    results.sort(key=lambda x: x["file"])
+
     for result in results:
         print(f"File: {result['file']}")
         print(f"Transcription: {result['transcription']}")
         print("---")
-
-    results.sort(key=lambda x: x["file"])
 
     summary_prompt = "Summarize the transcriptions of the audio files. Please contain the details of conversations."
     summary_prompt += "\n\n"
